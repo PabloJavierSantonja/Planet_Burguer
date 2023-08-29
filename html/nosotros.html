@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Burguer / Nosotros</title>
+    
+    <!-- Vínculo a Bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+    <!-- Vinculo a CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Elementos Desktop -->
+        <div class="desktop">
+            <a href="../index.html" class="desktop">
+                <img class="desktop" src="../imagenes/SVG/PlanetBurguer_imagotipo_color.svg" alt="Imagotipo">
+            </a>          
+            <nav class="desktop">
+                <ul>
+                    <li><a class="Actual" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="Opcion" href="menu.html">Menú</a></li>
+                    <li><a class="Opcion" href="locales.html">Locales</a></li>
+                    <li><a class="Opcion" href="eventos.html">Eventos</a></li>
+                    <li><a class="Opcion" href="pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>        
+
+        <!-- Elementos Mobile -->
+        <div class="mobile">
+            <a class="mobile" href="../index.html">
+                <img class="mobile" src="../imagenes/SVG/PlanetBurguer_isotipo_color.svg" alt="Isotipo">    
+            </a>            
+            <div class="mobile mobile_right">
+                <h1 class="mobile">Planet Burguer</h1>
+                <nav class="mobile drawer">
+                    <button class="mobile menu_hamburguesa">
+                        <div class="Icono_hamburguesa">
+                            <div id="Tapa"></div>
+                            <div id="Carne"></div>
+                            <div id="Base"></div>
+                        </div>  
+                    </button>
+                    <ul class="dropdown">
+                        <li><a href=../index.html>Home</a></li>
+                        <li class="Presente"><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="locales.html">Locales</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                    </ul> 
+                </nav>                                  
+                
+            </div>            
+        </div>  
+          
+    </header>
+
+    <main class="Nosotros">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                <h2>Quienes somos.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Eleifend porttitor integer lectus morbi enim arcu. At et ultricies dictum arcu id. Sagittis est a tellus egestas vel neque sed. Pellentesque leo nec egestas volutpat sit tincidunt ipsum urna phasellus. A volutpat consectetur vestibulum commodo nisl felis ac nulla ultrices. Iaculis arcu et lacus eget.</p>
+                
+                <!-- Carousel Autoplay Bootstrap -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../imagenes/Nosotros/carrousel_1.jpg" class="d-block w-100" alt="Carousel1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/Nosotros/carrousel_2.jpg" class="d-block w-100" alt="Carousel2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/Nosotros/carrousel_3.jpg" class="d-block w-100" alt="Carousel3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> 
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="Hide_Mobile grid_nosotros">
+                        <div class="Hide_Mobile square_one"></div>
+                        <div class="Hide_Mobile square_two"></div>
+                    </div>
+                    <h2>Nuestra misión.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Eleifend porttitor integer lectus morbi enim arcu. At et ultricies dictum arcu id. Sagittis est a tellus egestas vel neque sed. Pellentesque leo nec egestas volutpat sit tincidunt ipsum urna phasellus. A volutpat consectetur vestibulum commodo nisl felis ac nulla ultrices. Iaculis arcu et lacus eget. Nunc aliquet lacus dignissim molestie morbi. Duis faucibus curabitur at ut porta. Parturient facilisi pellentesque est dolor et dui quisque tempor. Amet in in feugiat mollis ut hac felis.</p>
+                    </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Planet Burguer - Derechos reservados</p>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="../imagenes/Instagram_icono.png" alt="icono_instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="../imagenes/Facebook_icono.png" alt="icono_facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="../imagenes/Twitter_icono.png" alt="icono_twitter"></a></li>
+                <li><a href="https://www.tiktok.com/"><img src="../imagenes/TikTok_icono.png" alt="icono_tiktok"></a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!-- Vínculo a Bootstraps -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

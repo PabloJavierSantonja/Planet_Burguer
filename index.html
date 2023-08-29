@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Burguer / Home</title>
+
+    <!-- Vínculo a Bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+    <!-- Vinculo a CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="index">
+
+    <header>
+
+        <!-- Elementos Desktop -->
+        <div class="desktop">
+            <img class="desktop index_hide" src="imagenes/SVG/PlanetBurguer_imagotipo_color.svg" alt="Imagotipo">                 
+            <nav class="desktop">
+                <ul>
+                    <li><a class="Opcion" href="html/nosotros.html">Nosotros</a></li>
+                    <li><a class="Opcion" href="html/menu.html">Menú</a></li>
+                    <li><a class="Opcion" href="html/locales.html">Locales</a></li>
+                    <li><a class="Opcion" href="html/eventos.html">Eventos</a></li>
+                    <li><a class="Opcion" href="html/pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>        
+
+        <!-- Elementos Mobile -->
+        <div class="mobile">
+            <img class="mobile index_hide" src="imagenes/SVG/PlanetBurguer_isotipo_color.svg" alt="Isotipo">             
+            <div class="mobile mobile_right">
+                <h1 class="mobile index_hide">Planet Burguer</h1>
+                <nav class="mobile drawer">
+                    <button class="mobile menu_hamburguesa">
+                        <div class="Icono_hamburguesa">
+                            <div id="Tapa"></div>
+                            <div id="Carne"></div>
+                            <div id="Base"></div>
+                        </div>  
+                    </button>
+                    <ul class="dropdown">
+                        <li class="Presente"><a href=#>Home</a></li>
+                        <li><a href="html/nosotros.html">Nosotros</a></li>
+                        <li><a href="html/menu.html">Menú</a></li>
+                        <li><a href="html/locales.html">Locales</a></li>
+                        <li><a href="html/eventos.html">Eventos</a></li>
+                        <li><a href="html/pedidos.html">Pedidos</a></li>
+                    </ul> 
+                </nav>                                  
+                
+            </div>            
+        </div>  
+          
+    </header>
+    
+    <main>
+        <div class="neon">
+            <img class="neon_verde" src="imagenes/index/Marca_Neon_Verde.svg" alt="Neon Verde">
+            <img class="neon_amarillo" src="imagenes/index/Marca_Neon_Amarillo.svg" alt="Neon Amarillo">
+            <img class="neon_rojo" src="imagenes/index/Marca_Neon_Rojo.svg" alt="Neon Rojo">
+        </div>
+        <div class="video">
+            <video width="200px" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="Hamburguesa"><source src="imagenes/index/Video_Hamburguesa.mp4" type="video/mp4"></video>        
+        </div>       
+    </main>
+
+   
+    <footer>
+        <p>© 2023 Planet Burguer - Derechos reservados</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="imagenes/Instagram_icono.png" alt="icono_instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="imagenes/Facebook_icono.png" alt="icono_facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="imagenes/Twitter_icono.png" alt="icono_twitter"></a></li>
+                <li><a href="https://www.tiktok.com/"><img src="imagenes/TikTok_icono.png" alt="icono_tiktok"></a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!-- Vínculo a Bootstraps -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

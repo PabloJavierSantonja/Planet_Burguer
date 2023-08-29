@@ -1,0 +1,936 @@
+/* Estilos origen */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+/* Fuente INDIE FLOWER / Vinculo a google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Fuente HELVETICA ROUNDED/ En carpeta local */
+
+@font-face {
+    font-family: HelveticaRounded;
+    src: url(../fonts/Helvetica-rounded-bold.otf);
+}
+
+ /* MEDIA QUERY MOBILE */
+ @media (max-width: 768px){
+    footer{
+        flex-direction: column-reverse;  
+    }
+   footer p{
+    padding: 4px;
+   }
+   .desktop{
+    display: none;
+   }
+   div.ContainerPrincipal{
+    flex-direction: column;
+   }
+   .Hide_Mobile{
+    display: none;
+   }
+  }
+ 
+  @media (min-width: 768px){
+  .mobile{
+        display: none;
+    }
+  }
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+/* Estilos Header */
+
+    header{
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 16px 32px 16px 32px;
+        font-family: HelveticaRounded;
+        min-width: 320px;
+        z-index: 1;
+        border-bottom: 2px solid #F6CA44;
+        
+    }
+
+     header img{
+        height: 100px;
+    }
+
+    /* Desktop */
+
+        div.desktop{
+            display: flex; 
+            justify-content: space-between;
+            align-items: end; 
+               
+        }
+
+        header nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+            padding: 0px;
+        }
+
+        header div.desktop nav ul li a.Opcion{
+            font-size: 18px;
+            text-decoration: none;
+            color: #969696;  
+            margin: 2px 8px 2px 8px;
+            transition: 0.2s ease-in;
+        }
+
+        header div.desktop nav ul li a.Opcion:hover{
+            border-top: 12px solid #969696;
+            border-radius: 10px 10px 5px 5px;
+            border-bottom: 8px solid #969696;
+            margin: 2px 16px 2px 32px;    
+        }
+   
+        a.Actual{     
+            font-size: 18px;
+            text-decoration: none;
+            color: #95C11F;            
+            border-top: 12px solid #95C11F;
+            border-radius: 10px 10px 5px 5px;
+            border-bottom: 8px solid #95C11F;
+            margin: 2px 16px 2px 16px;            
+        }
+
+    /* Mobile */
+  
+
+        div.mobile{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        div.mobile_right{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        h1{
+            font-size: 30px;
+            text-align: end;
+            color: #95C11F; 
+            margin: 0px;
+        }   
+        .drawer{            
+            position: relative;
+            justify-content: end;
+            display: flex;            
+        }
+
+
+        button.menu_hamburguesa{
+            background-color: #111;
+            border: none;
+        }
+        button.menu_hamburguesa:focus-within div.Icono_hamburguesa{
+            justify-content: space-between; 
+        }
+        nav.drawer:focus-within ul.dropdown{
+            display: block; 
+        }
+
+
+        .Icono_hamburguesa{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin: 8px 0px 8px 0px;
+            justify-content: center;
+            height: 50px;
+            transition: 2s;           
+        }
+            #Tapa{
+                width: 40px;
+                height: 12px;
+                background-color: white;
+                border-radius: 16px 16px 2px 2px;
+                margin-bottom: 4px;
+            }
+            #Carne{
+                width: 40px;
+                height: 8px;
+                background-color: white;
+                border-radius: 4px;
+            }
+            #Base{
+                width: 40px;
+                height: 8px;
+                background-color: white;
+                border-radius: 2px 2px 6px 6px;
+                margin-top: 4px;
+            }
+   
+
+        ul.dropdown{
+            display: none;            
+            position: absolute;
+            right: -32px;
+            top: 84px;
+            padding: 0px;
+        }
+        ul.dropdown li{
+            padding: 12px 32px 12px 4px;
+            flex-direction: column;
+            border-left: 8px solid #969696;
+            border-bottom: 1px solid #969696;
+        }
+        header div.mobile nav ul li a{
+            font-size: 18px;
+            text-decoration: none;
+            color: #969696;
+            padding: 16px;
+            transition: 0.5s ease-in;
+        }       
+                        
+       
+        header div.mobile nav ul li{
+            background-color: #4f4f4f;
+        }
+     
+        header div.mobile nav ul li.Presente a{
+            color: #95C11F;
+        }
+        header div.mobile nav ul li.Presente{
+            border-left: 8px solid #95C11F;
+            border-bottom: 1px solid #95C11F;
+        }
+
+
+/* Estilos Footer */
+
+    footer{
+        display: flex;
+        background-image: linear-gradient(#4f4f4f,#111);
+        opacity: 0.8;
+        padding: 8px 32px 8px 32px;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 8px, solid, #111;
+        margin-top: auto;
+        position: sticky;
+        bottom: 0px;  
+        min-width: 320px;          
+    }
+
+    footer p{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: #f5f5f5;
+        text-indent: 0px;
+    }
+
+    
+    footer nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+               
+    }
+
+    footer nav ul li a{
+        transition: 4seg;
+    }
+
+    footer nav ul li a img{
+        height: 32px;
+        margin: 4px; 
+        transition: 0.5s ease-in-out;      
+    }
+
+    footer nav ul li a img:hover{
+        margin: 0px 16px 0px 16px;
+        height: 40px;
+        filter: brightness(0) saturate(100%) invert(75%) sepia(80%) saturate(450%) hue-rotate(23deg) brightness(83%) contrast(94%);
+    }
+
+  
+/* Estilos Main */
+
+    main{
+        margin-top: 162px;
+    }
+
+    .index{
+        background-color: #111;
+    }
+    
+    h2{
+        font-family: HelveticaRounded;
+        font-size: 30px;
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+
+    h4{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    p{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        text-indent: 16px;
+    }  
+    
+    main nav ul{
+        list-style-type: none;
+        
+    }
+    
+    .opciones_menu{
+        height: 100px;
+    }
+    
+    /* Estios INDEX */
+
+    .index_hide{
+        opacity: 0;
+    }
+
+    .video{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: -1;
+        overflow: hidden;        
+    }
+
+    .video video{
+        width: 100%;
+        min-width: 800px;
+        max-height: 65vh;
+        align-self: center;
+    }
+
+    .neon{
+        width: 75%;
+        margin: 2% auto;
+        max-width: 700px; 
+    }
+
+    .neon img{
+        position: absolute;
+        width: 75%;  
+        max-width: 700px;      
+    }
+
+    .neon_verde{
+        filter: drop-shadow(0 0 5px #33ff00) drop-shadow(0 0 3px #33ff00);
+    }
+    .neon_amarillo{
+        filter: drop-shadow(0 0 3px #ffc400) drop-shadow(0 0 3px #ffc400);
+    }
+    .neon_rojo{
+        filter: drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 3px #ff0000);
+    }
+
+    /* Estilos PEDIDOS */  
+    .iconos_pedidos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px               
+    }  
+
+    .iconos_pedidos img{
+        width: 100%; 
+        transition: 0.3s;      
+    }   
+
+    .iconos_pedidos img:hover{
+        transform: scale(1.1);  
+        filter: drop-shadow(10px 10px 40px rgba(0,0,0,0.6));    
+    }
+
+    .iconos_pedidos img:active{
+        transform: scale(0.9); 
+    }
+
+
+    .tarjeta_pedidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFE7A0;
+        opacity: 0,5;
+        margin: auto;
+        margin-top: 10vh;
+        padding: 5%;
+        max-width: 600px;
+        box-shadow: 20px 02px 40px #BF9000;
+        border-radius: 8px;
+
+    }
+
+    .tarjeta_pedidos h2{
+        margin-top: 0px;
+        margin-bottom: 4px;        
+    }
+
+    .tarjeta_pedidos nav{
+        margin-top: 5%;
+    }
+
+    .fondo_mujer{
+        width: 40%;
+        max-height: 65vh;
+        position: fixed;
+        bottom: 0px;
+        filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.5));
+        object-fit: contain;
+    }
+
+    /* Estilos NOSOTROS */
+
+        body{
+            background-color: #F6CA44;
+        }
+
+        .grid_nosotros{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 32px;
+        }
+
+        .square_one{
+            background-image: url(../imagenes/Nosotros/imagen_1.jpg);
+            width: 100%;
+            background-size: cover;
+            background-position: center;        
+        }
+
+        .square_one::after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+
+        .square_two{
+            background-image: url(../imagenes/Nosotros/imagen_2.jpg);
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .square_two::after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+ 
+       
+     /* Estilos EVENTOS */
+
+        .recuadro_contacto{
+            background-color: #BF9000;
+            padding: 8px 16px;
+            margin: 24px 0px;
+            box-shadow: 2px 2px 2px #4f4f4f;
+        }
+
+        .contacto{
+            font-family: HelveticaRounded;
+            font-size: 30px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+        }
+
+        input {
+            background-color: #FFE7A0;
+            padding: 8px 16px;
+            font-size: 16px;
+            border: 2px solid #BF9000;
+            border-radius: 8px;
+            outline: none;
+            width: 100%;
+        }
+
+        input:focus{
+            background-color: #f5f5f5;
+            box-shadow: inset 2px 2px 2px #4f4f4f
+        }
+
+        input[type="submit"]{
+            background-color: #F6CA44;
+            box-shadow: 2px 2px 5px #4f4f4f;
+            border: 2px solid #F6CA44;
+            font-weight: 600;
+            padding: 12px;
+            margin: 12px 0px;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #F6CA44;
+            box-shadow: 5px 5px 10px #4f4f4f;
+            border: 2px solid #FFE7A0;
+        }
+
+        input[type="submit"]:active{
+            background-color: #F6CA44;
+            box-shadow: 1px 1px 2px #4f4f4f;
+        }
+    
+        
+        textarea {
+            background-color: #FFE7A0;
+            padding: 16px 24px;
+            border: 2px solid #BF9000;
+            border-radius: 8px;
+            outline: none;
+            width: 100%;
+        }
+
+        textarea:focus{
+            background-color: #f5f5f5;
+            box-shadow: inset 2px 2px 2px #4f4f4f
+        }
+
+        form label{
+            color: #FFE7A0;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin: 8px 0px 0px 8px;
+        }
+
+        .telcontainer{
+            display: flex;
+            gap: 8px;
+        }
+        .telcontainer2{
+            display: flex;
+            flex-direction: column;
+            align-items: start;            
+        }
+        .numero{
+            flex: 1;
+        }        
+        .telcontainer2>p{
+            color: #111;
+            font-size: 10px;
+            margin: 0px 0px 0px 8px ; 
+            text-indent: 0px;       
+        }
+
+        .checkbox{
+            display: flex;
+            margin:24px 12px 12px 12px;
+            align-items: center;
+            justify-items: start;            
+        }
+       
+        .checkbox input[type="checkbox"]{
+            cursor: pointer;
+            height: 24px;
+            width: 24px;
+        }
+        .forcheck{
+            cursor: pointer;
+        }
+       
+        /* Fotos Responsive */
+
+        .FlexFotos1{
+           display: flex;           
+           width: 100%;
+                                   
+        }
+
+        .FlexFotos2{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 40%;
+           
+        }
+
+        .Imagen1 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 20%;
+            padding-right: 12px;
+            
+        }
+
+        .Imagen2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 20%;
+        }
+
+      /* Estilos LOCALES */  
+      
+        /* Fotos Polaroid */
+            .card_local{
+                display: flex;
+                max-width: 320px;
+                min-width: 220px;
+                flex-direction: column;
+                background-color: #f5f5f5;
+                padding: 12px;
+                box-shadow: 6px 6px 4px rgba(0,0,0,0.3);
+                transition: 0.2s; 
+            }
+
+            .card_local:hover{
+                box-shadow: 12px 12px 4px rgba(0,0,0,0.3);
+                transform: scale(1.1) rotate(-5deg);
+            }
+
+            .square_image{
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .palermo{
+                background-image: url(../imagenes/Locales/Local_1.jpg);        
+            }
+            .vicente{
+                background-image: url(../imagenes/Locales/Local_2.jpg);        
+            }
+            .crespo{
+                background-image: url(../imagenes/Locales/Local_3.jpg);        
+            }
+            .recoleta{
+                background-image: url(../imagenes/Locales/Local_4.jpg);        
+            }
+
+            .square_image::after{
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }     
+            
+            .card_local a{
+                font-family: 'Indie Flower', cursive;
+                font-size: 32px;
+                text-decoration: none;
+                color: #111;                
+            }   
+
+            .card_local_pie{
+                display: flex;
+                align-items: center;
+                margin-right: 12px;
+            }
+
+            .card_local_pie p{
+                margin: 0px;
+                text-indent: 0px;
+            }
+
+            .card_local_info{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 4px;
+
+            }
+
+            .card_local_pie img{
+                height: 24px;
+                filter: brightness(0) saturate(100%)
+            }
+
+        
+        /* Contenedores */
+        
+            .contenedor_polaroid_1{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin: 32px 0px;
+            }    
+            
+            .contenedor_polaroid_2{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                justify-content: center;
+            }
+
+            .display_mapa{
+                background-color: #BF9000;
+                width: 100%;
+                margin-top: 32px;
+                height: 65vh;
+                overflow: hidden;
+                position: sticky;
+                top: 184px;
+
+
+            }   
+            
+            .Locales iframe{
+                width: 100%;
+                height: 65vh;               
+            }
+
+      /* Estilos MENU */  
+
+        /* Tarjetas Hamburguesas */     
+
+        .menu_navegacion{
+            margin: 32px;
+
+        }
+
+        .menu_navegacion ul{
+            display: flex;
+            width: 500px;
+            justify-content: start;
+            gap: 16px;            
+        }
+
+        /* Tarjetas Hamburguesas */
+
+              
+        .container_hamburguesas ul{
+            display: flex;  
+            flex-wrap: wrap;
+            gap: 16px;                       
+
+        }
+
+        .card_hamburguesa{
+            display: flex;
+            max-width: 220px;
+            width: 48%;
+            min-width: 160px;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            padding: 12px 12px 0px 12px;
+            box-shadow: 6px 6px 4px rgba(0,0,0,0.3);
+            transition: 0.2s;                                
+        }
+
+            
+        .card_hamburguesa:hover{
+            
+            transform: scale(1.4) rotate(-5deg);
+            box-shadow: 4px 4px 20px rgba(0,0,0,.8);
+        }
+
+        .card_hamburguesa button{
+            text-decoration: none;
+            border: none;
+            text-align: left;
+        }
+        
+        .card_hamburguesa p{
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+            text-decoration: none;
+            color: #111;  
+            font-weight: bolder;
+            margin: 6px;
+            text-indent: 0px;
+        }
+
+        .img_ciudad{
+            width: 100%;
+            margin-bottom: 12px;
+
+        }
+
+        .img_hamburguesa{
+            width: 65%;
+            height: fit-content;
+            transform: rotate(-10eg);
+            filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.3));
+            position: relative;
+            right: 60%;
+            align-self: end;                  
+        }
+
+        .foto_container{
+            display: flex;
+            width: 100%;        
+        }
+
+        /* Postal Hamburguesa */
+
+        .modal_container{
+            display: flex;
+            width: 580px;
+            background-size: cover;
+            background-position: left;
+            align-items: end;                     
+        }
+
+        .modal_container::after{
+            content: "";
+            display: block;
+            padding-top: 70%;
+        }
+        
+
+        .Paris{
+            background-image: url(../imagenes/Menu/Postales/Postal_Paris.jpg);
+        }
+        .Lyon{
+            background-image: url(../imagenes/Menu/Postales/Postal_Lyon.jpg);
+        }
+        .Lumpur{
+            background-image: url(../imagenes/Menu/Postales/Postal_Lumpur.jpg);
+        }
+        .Delhi{
+            background-image: url(../imagenes/Menu/Postales/Postal_Delhi.jpg);
+        }
+        .Bombay{
+            background-image: url(../imagenes/Menu/Postales/Postal_Bombay.jpg);
+        }
+        .Monterrey{
+            background-image: url(../imagenes/Menu/Postales/Postal_Monterrey.jpg);
+        }
+        .Kyoto{
+            background-image: url(../imagenes/Menu/Postales/Postal_Kyoto.jpg);
+        }
+        .Aires{
+            background-image: url(../imagenes/Menu/Postales/Postal_Aires.jpg);
+        }
+        .Ankara{
+            background-image: url(../imagenes/Menu/Postales/Postal_Ankara.jpg);
+        }
+        .Dhabi{
+            background-image: url(../imagenes/Menu/Postales/Postal_Dhabi.jpg);
+        }
+        .Austin{
+            background-image: url(../imagenes/Menu/Postales/Postal_Austin.jpg);
+        }
+        .Francisco{
+            background-image: url(../imagenes/Menu/Postales/Postal_Francisco.jpg);
+        }
+        .Bolonia{
+            background-image: url(../imagenes/Menu/Postales/Postal_Bolonia.jpg);
+        }
+        .Santorini{
+            background-image: url(../imagenes/Menu/Postales/Postal_Santorini.jpg);
+        }
+        .Oslo{
+            background-image: url(../imagenes/Menu/Postales/Postal_Oslo.jpg);
+        }
+
+        .modal_contenido_postal{
+            width: 100%;
+            display: flex;
+            flex: 1;
+            position: absolute;
+            width: 580px;
+        }
+
+        .modal_columnas_postal{
+            display: flex;
+            align-items: end;
+        }
+
+        .modal_columna{
+            width: 290px;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 36px 36px 36px 4px;
+            justify-content: end;
+            
+        }
+
+        .modal_columna p{
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+            color: #111;  
+            font-weight: bolder;
+            margin: 0px;
+            align-self: flex-start;
+        }
+
+        .modal_columna ul{
+            font-family: 'Indie Flower', cursive;
+            font-size: 16px;
+            color: #111;  
+            list-style-type: circle;
+        } 
+
+        .modal_columna img{
+            position: absolute;
+            width: 160px;
+            left: 160px;
+            top: 115px;
+            transform: rotate(-10deg);
+            filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.3));
+        }
+        
+        .postal_texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .postal_button{
+            font-family: HelveticaRounded;
+            color: #111;
+            font-size: 18px;
+            background-color: #F6CA44;
+            box-shadow: 2px 2px 5px #4f4f4f;
+            border: 2px solid #F6CA44;
+            padding: 8px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 12px;
+            width: 50%;
+            align-self: end;
+        }
+
+        .postal_button:hover{
+            background-color: #F6CA44;
+            box-shadow: 5px 5px 10px #4f4f4f;
+            border: 2px solid #FFE7A0;
+        }
+
+        .postal_button:active{
+            background-color: #F6CA44;
+            box-shadow: 1px 1px 2px #4f4f4f;
+        }
+
+        .modal-content{
+            width: 590px;
+        }
+
+      
+
+
+       
+
+

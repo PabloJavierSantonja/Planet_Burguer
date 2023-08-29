@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Burguer / Locales</title>
+
+    <!-- Vínculo a Bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+    <!-- Vinculo a CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Elementos Desktop -->
+        <div class="desktop">
+            <a href="../index.html" class="desktop">
+                <img class="desktop" src="../imagenes/SVG/PlanetBurguer_imagotipo_color.svg" alt="Imagotipo">
+            </a>          
+            <nav class="desktop">
+                <ul>
+                    <li><a class="Opcion" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="Opcion" href="menu.html">Menú</a></li>
+                    <li><a class="Actual" href="locales.html">Locales</a></li>
+                    <li><a class="Opcion" href="eventos.html">Eventos</a></li>
+                    <li><a class="Opcion" href="pedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>        
+
+        <!-- Elementos Mobile -->
+        <div class="mobile">
+            <a class="mobile" href="../index.html">
+                <img class="mobile" src="../imagenes/SVG/PlanetBurguer_isotipo_color.svg" alt="Isotipo">    
+            </a>            
+            <div class="mobile mobile_right">
+                <h1 class="mobile">Planet Burguer</h1>
+                <nav class="mobile drawer">
+                    <button class="mobile menu_hamburguesa">
+                        <div class="Icono_hamburguesa">
+                            <div id="Tapa"></div>
+                            <div id="Carne"></div>
+                            <div id="Base"></div>
+                        </div>  
+                    </button>
+                    <ul class="dropdown">
+                        <li><a href=../index.html>Home</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li class="Presente"><a href="locales.html">Locales</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                    </ul> 
+                </nav>                                  
+                
+            </div>            
+        </div>  
+          
+    </header>
+
+    <main class="Locales">
+        <section class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6">
+                    <!-- Tarjetas locales -->      
+                    <nav class="contenedor_polaroid_1">
+                        <div class="contenedor_polaroid_2">
+                            
+                            <div class="card_local"> 
+                                <a href="#map_palermo" class="square_image palermo"></a>
+                                <a href="#map_palermo">Palermo</a>
+                                <div class="card_local_pie">
+                                    <div class="card_local_info">
+                                        <p>Dirección</p>
+                                        <p>011-5555-1234</p>                                    
+                                    </div>
+                                    <a href=""><img src="../imagenes/WhatsApp_icono.png" alt="WhatsApp"></a> 
+                                </div>              
+                            </div>
+                            
+                            <div class="card_local"> 
+                                <a href="#map_vicente" class="square_image vicente"></a>
+                                <a href="#map_vicente">Vicente Lopez</a>
+                                <div class="card_local_pie">
+                                    <div class="card_local_info">
+                                        <p>Dirección</p>
+                                        <p>011-6666-1234</p>                                    
+                                    </div>
+                                    <a href=""><img src="../imagenes/WhatsApp_icono.png" alt="WhatsApp"></a> 
+                                </div>              
+                            </div>
+                        </div>
+
+                        <div class="contenedor_polaroid_2">
+                            <div class="card_local"> 
+                                <a href="#map_crespo" class="square_image crespo"></a>
+                                <a href="#map_crespo">Villa Crespo</a>
+                                <div class="card_local_pie">
+                                    <div class="card_local_info">
+                                        <p>Dirección</p>
+                                        <p>011-2222-1234</p>                                    
+                                    </div>
+                                    <a href=""><img src="../imagenes/WhatsApp_icono.png" alt="WhatsApp"></a> 
+                                </div>              
+                            </div>
+
+                            <div class="card_local"> 
+                                <a href="#map_recoleta" class="square_image recoleta"></a>
+                                <a href="#map_recoleta">Recoleta</a>
+                                <div class="card_local_pie">
+                                    <div class="card_local_info">
+                                        <p>Dirección</p>
+                                        <p>011-3333-1234</p>                                    
+                                    </div>
+                                    <a href=""><img src="../imagenes/WhatsApp_icono.png" alt="WhatsApp"></a> 
+                                </div>              
+                            </div>
+                        </div>         
+                    </nav>  
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="display_mapa">
+                        <!-- Mapa Palermo -->
+                        <iframe id="map_palermo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.51963646441!2d-58.43521840701634!3d-34.59053538893246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e1330df601%3A0xb5bb532c622867f8!2sPlanet%20Burguer%20-%20Palermo!5e0!3m2!1sen!2sar!4v1693089993043!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Mapa Vicente -->
+                        <iframe id="map_vicente" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13150.08924625455!2d-58.49312441284179!3d-34.51499269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1ba8b024fa5%3A0xd64d596a5aefca1b!2sPlanet%20Burguer%20-%20Vicente%20Lopez!5e0!3m2!1sen!2sar!4v1693092066794!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Mapa Crespo -->
+                        <iframe id="map_crespo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2491748302273!2d-58.44088072349024!3d-34.597860157190176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbe44ca2318b%3A0xc4bcc6cd0476b86d!2sPlanet%20Burguer%20-%20Villa%20Crespo!5e0!3m2!1sen!2sar!4v1693092028189!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Mapa Recoleta -->
+                        <iframe id="map_recoleta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4136443554657!2d-58.399499923490424!3d-34.59370035697052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4b7262d34f%3A0x201e930172c8b651!2sPlanet%20Burguer%20-%20Recoleta!5e0!3m2!1sen!2sar!4v1693089509331!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>         
+    </main>
+
+
+    <!--  -->
+    
+    <footer>
+        <p>© 2023 Planet Burguer - Derechos reservados</p>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="../imagenes/Instagram_icono.png" alt="icono_instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="../imagenes/Facebook_icono.png" alt="icono_facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="../imagenes/Twitter_icono.png" alt="icono_twitter"></a></li>
+                <li><a href="https://www.tiktok.com/"><img src="../imagenes/TikTok_icono.png" alt="icono_tiktok"></a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <!-- Vínculo a Bootstraps -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
