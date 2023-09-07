@@ -2,12 +2,12 @@
 
 footer{
     display: flex;
-    background-image: linear-gradient(#4f4f4f,#111);
+    background-image: linear-gradient($gris_burguer,$negro_burguer);
     opacity: 0.8;
     padding: 8px 32px 8px 32px;
     justify-content: space-between;
     align-items: center;
-    border-top: 8px, solid, #111;
+    border-top: 8px, solid, $negro_burguer;
     margin-top: auto;
     position: sticky;
     bottom: 0px;  

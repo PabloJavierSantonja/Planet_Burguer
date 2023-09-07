@@ -40,6 +40,7 @@ body {
 }
 
 /* Colores */
+/* Sombras */
 @font-face {
   font-family: HelveticaRounded;
   src: url(../fonts/Helvetica-rounded-bold.otf);
@@ -87,22 +88,18 @@ main nav ul {
   margin: 2% auto;
   max-width: 700px;
 }
-
 .neon img {
   position: absolute;
   width: 75%;
   max-width: 700px;
 }
-
-.neon_verde {
+.neon .neon_verde {
   filter: drop-shadow(0 0 5px #33ff00) drop-shadow(0 0 3px #33ff00);
 }
-
-.neon_amarillo {
+.neon .neon_amarillo {
   filter: drop-shadow(0 0 3px #ffc400) drop-shadow(0 0 3px #ffc400);
 }
-
-.neon_rojo {
+.neon .neon_rojo {
   filter: drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 3px #ff0000);
 }
 
@@ -111,7 +108,7 @@ main nav ul {
 }
 
 .video {
-  width: 100%;
+  width: 80%;
   position: fixed;
   bottom: 0;
   z-index: -1;
@@ -145,12 +142,6 @@ main nav ul {
   background-image: url(../imagenes/Nosotros/imagen_2.jpg);
 }
 
-.container_hamburguesas ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
 .card_hamburguesa {
   display: flex;
   max-width: 220px;
@@ -162,18 +153,10 @@ main nav ul {
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
 }
-
 .card_hamburguesa:hover {
   transform: scale(1.4) rotate(-5deg);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
 }
-
-.card_hamburguesa button {
-  text-decoration: none;
-  border: none;
-  text-align: left;
-}
-
 .card_hamburguesa p {
   font-family: "Indie Flower", cursive;
   font-size: 24px;
@@ -183,13 +166,20 @@ main nav ul {
   margin: 6px;
   text-indent: 0px;
 }
-
-.img_ciudad {
+.card_hamburguesa button {
+  text-decoration: none;
+  border: none;
+  text-align: left;
+}
+.card_hamburguesa button .foto_container {
+  display: flex;
+  width: 100%;
+}
+.card_hamburguesa button .foto_container .img_ciudad {
   width: 100%;
   margin-bottom: 12px;
 }
-
-.img_hamburguesa {
+.card_hamburguesa button .foto_container .img_hamburguesa {
   width: 65%;
   height: fit-content;
   transform: rotate(-10eg);
@@ -199,11 +189,6 @@ main nav ul {
   align-self: end;
 }
 
-.foto_container {
-  display: flex;
-  width: 100%;
-}
-
 .modal_container {
   display: flex;
   width: 580px;
@@ -211,7 +196,6 @@ main nav ul {
   background-position: left;
   align-items: end;
 }
-
 .modal_container::after {
   content: "";
   display: block;
@@ -374,6 +358,12 @@ main nav ul {
   gap: 16px;
 }
 
+.container_hamburguesas ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .card_local {
   display: flex;
   max-width: 320px;
@@ -384,68 +374,56 @@ main nav ul {
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
 }
-
 .card_local:hover {
   box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.3);
   transform: scale(1.1) rotate(-5deg);
 }
-
-.square_image {
+.card_local .square_image {
   width: 100%;
   background-size: cover;
   background-position: center;
 }
-
-.palermo {
-  background-image: url(../imagenes/Locales/Local_1.jpg);
-}
-
-.vicente {
-  background-image: url(../imagenes/Locales/Local_2.jpg);
-}
-
-.crespo {
-  background-image: url(../imagenes/Locales/Local_3.jpg);
-}
-
-.recoleta {
-  background-image: url(../imagenes/Locales/Local_4.jpg);
-}
-
-.square_image::after {
+.card_local .square_image::after {
   content: "";
   display: block;
   padding-top: 100%;
 }
-
+.card_local .palermo {
+  background-image: url(../imagenes/Locales/Local_1.jpg);
+}
+.card_local .vicente {
+  background-image: url(../imagenes/Locales/Local_2.jpg);
+}
+.card_local .crespo {
+  background-image: url(../imagenes/Locales/Local_3.jpg);
+}
+.card_local .recoleta {
+  background-image: url(../imagenes/Locales/Local_4.jpg);
+}
 .card_local a {
   font-family: "Indie Flower", cursive;
   font-size: 32px;
   text-decoration: none;
   color: #111;
 }
-
-.card_local_pie {
+.card_local .card_local_pie {
   display: flex;
   align-items: center;
   margin-right: 12px;
 }
-
-.card_local_pie p {
-  margin: 0px;
-  text-indent: 0px;
+.card_local .card_local_pie img {
+  height: 24px;
+  filter: brightness(0) saturate(100%);
 }
-
-.card_local_info {
+.card_local .card_local_info {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 4px;
 }
-
-.card_local_pie img {
-  height: 24px;
-  filter: brightness(0) saturate(100%);
+.card_local .card_local_info > p {
+  margin-bottom: 0px;
+  text-indent: 0px;
 }
 
 .contenedor_polaroid_1 {
@@ -477,30 +455,6 @@ main nav ul {
   height: 65vh;
 }
 
-.iconos_pedidos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0px;
-  padding: 0px;
-}
-
-.iconos_pedidos img {
-  width: 100%;
-  transition: 0.3s;
-}
-
-.iconos_pedidos img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.6));
-}
-
-.iconos_pedidos img:active {
-  transform: scale(0.9);
-}
-
 .tarjeta_pedidos {
   display: flex;
   flex-direction: column;
@@ -514,14 +468,32 @@ main nav ul {
   box-shadow: 20px 2px 40px #BF9000;
   border-radius: 8px;
 }
-
 .tarjeta_pedidos h2 {
   margin-top: 0px;
   margin-bottom: 4px;
 }
-
 .tarjeta_pedidos nav {
   margin-top: 5%;
+}
+.tarjeta_pedidos .iconos_pedidos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+.tarjeta_pedidos .iconos_pedidos img {
+  width: 100%;
+  transition: 0.3s;
+}
+.tarjeta_pedidos .iconos_pedidos img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.6));
+}
+.tarjeta_pedidos .iconos_pedidos img:active {
+  transform: scale(0.9);
 }
 
 .fondo_mujer {
@@ -556,12 +528,10 @@ input {
   outline: none;
   width: 100%;
 }
-
 input:focus {
   background-color: #f5f5f5;
-  box-shadow: inset 2px 2px 2px #4f4f4f;
+  box-shadow: inset 0px 0px 5px #111;
 }
-
 input[type=submit] {
   background-color: #F6CA44;
   box-shadow: 2px 2px 5px #4f4f4f;
@@ -570,13 +540,11 @@ input[type=submit] {
   padding: 12px;
   margin: 12px 0px;
 }
-
 input[type=submit]:hover {
   background-color: #F6CA44;
   box-shadow: 5px 5px 10px #4f4f4f;
   border: 2px solid #FFE7A0;
 }
-
 input[type=submit]:active {
   background-color: #F6CA44;
   box-shadow: 1px 1px 2px #4f4f4f;
@@ -590,10 +558,9 @@ textarea {
   outline: none;
   width: 100%;
 }
-
 textarea:focus {
   background-color: #f5f5f5;
-  box-shadow: inset 2px 2px 2px #4f4f4f;
+  box-shadow: inset 0px 0px 5px #111;
 }
 
 form label {
@@ -613,11 +580,6 @@ form label {
   flex-direction: column;
   align-items: start;
 }
-
-.numero {
-  flex: 1;
-}
-
 .telcontainer2 > p {
   color: #111;
   font-size: 10px;
@@ -625,7 +587,11 @@ form label {
   text-indent: 0px;
 }
 
-.checkbox {
+.numero {
+  flex: 1;
+}
+
+div.checkbox {
   display: flex;
   margin: 24px 12px 12px 12px;
   align-items: center;
@@ -793,6 +759,7 @@ header ul.dropdown li {
   flex-direction: column;
   border-left: 8px solid #969696;
   border-bottom: 1px solid #969696;
+  background-color: #4f4f4f;
 }
 header header div.mobile nav ul li a {
   font-size: 18px;

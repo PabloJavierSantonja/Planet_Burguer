@@ -3,15 +3,13 @@
     width: 580px;
     background-size: cover;
     background-position: left;
-    align-items: end;                     
+    align-items: end; 
+    &::after{
+        content: "";
+        display: block;
+        padding-top: 70%;
+    }
 }
-
-.modal_container::after{
-    content: "";
-    display: block;
-    padding-top: 70%;
-}
-
 
 .Paris{
     background-image: url(../imagenes/Menu/Postales/Postal_Paris.jpg);

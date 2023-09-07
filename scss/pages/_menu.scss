@@ -2,3 +2,9 @@
 @import '../componentes/card_menu';
 @import '../componentes/postal_hamburguesa';
 @import '../componentes/navbar_menu';
+
+.container_hamburguesas ul{
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 16px;                       
+}
