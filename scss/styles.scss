@@ -3,7 +3,12 @@
 @import 'base/variables';
 @import 'base/fuentes';
 
+@import 'pages/index';
+@import 'pages/nosotros';
+@import 'pages/menu';
+@import 'pages/locales';
+@import 'pages/pedidos';
+@import 'pages/eventos';
+
 @import 'componentes/header';
 @import 'componentes/footer';
-
-@import 'pages/nosotros';
