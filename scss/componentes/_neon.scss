@@ -1,0 +1,21 @@
+.neon{
+    width: 75%;
+    margin: 2% auto;
+    max-width: 700px; 
+}
+
+.neon img{
+    position: absolute;
+    width: 75%;  
+    max-width: 700px;      
+}
+
+.neon_verde{
+    filter: drop-shadow(0 0 5px #33ff00) drop-shadow(0 0 3px #33ff00);
+}
+.neon_amarillo{
+    filter: drop-shadow(0 0 3px #ffc400) drop-shadow(0 0 3px #ffc400);
+}
+.neon_rojo{
+    filter: drop-shadow(0 0 3px #ff0000) drop-shadow(0 0 3px #ff0000);
+}

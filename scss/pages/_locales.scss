@@ -1,4 +1,32 @@
-@import 'componentes/header';
-@import 'componentes/footer';
+@import '../componentes/card_local';
 
-@import 'componentes/card_local';
+.contenedor_polaroid_1{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0px;
+}    
+
+.contenedor_polaroid_2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.display_mapa{
+    background-color: #BF9000;
+    width: 100%;
+    margin-top: 32px;
+    height: 65vh;
+    overflow: hidden;
+    position: sticky;
+    top: 184px;
+
+
+}   
+
+.Locales iframe{
+    width: 100%;
+    height: 65vh;               
+}

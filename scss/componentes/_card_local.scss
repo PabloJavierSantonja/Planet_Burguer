@@ -1,0 +1,71 @@
+.card_local{
+    display: flex;
+    max-width: 320px;
+    min-width: 220px;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 12px;
+    box-shadow: 6px 6px 4px rgba(0,0,0,0.3);
+    transition: 0.2s; 
+}
+
+.card_local:hover{
+    box-shadow: 12px 12px 4px rgba(0,0,0,0.3);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.square_image{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.palermo{
+    background-image: url(../imagenes/Locales/Local_1.jpg);        
+}
+.vicente{
+    background-image: url(../imagenes/Locales/Local_2.jpg);        
+}
+.crespo{
+    background-image: url(../imagenes/Locales/Local_3.jpg);        
+}
+.recoleta{
+    background-image: url(../imagenes/Locales/Local_4.jpg);        
+}
+
+.square_image::after{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}     
+
+.card_local a{
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    text-decoration: none;
+    color: #111;                
+}   
+
+.card_local_pie{
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.card_local_pie p{
+    margin: 0px;
+    text-indent: 0px;
+}
+
+.card_local_info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+
+}
+
+.card_local_pie img{
+    height: 24px;
+    filter: brightness(0) saturate(100%)
+}

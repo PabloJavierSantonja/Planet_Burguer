@@ -1,0 +1,48 @@
+.iconos_pedidos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px               
+}  
+
+.iconos_pedidos img{
+    width: 100%; 
+    transition: 0.3s;      
+}   
+
+.iconos_pedidos img:hover{
+    transform: scale(1.1);  
+    filter: drop-shadow(10px 10px 40px rgba(0,0,0,0.6));    
+}
+
+.iconos_pedidos img:active{
+    transform: scale(0.9); 
+}
+
+
+.tarjeta_pedidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFE7A0;
+    opacity: 0,5;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 5%;
+    max-width: 600px;
+    box-shadow: 20px 02px 40px #BF9000;
+    border-radius: 8px;
+
+}
+
+.tarjeta_pedidos h2{
+    margin-top: 0px;
+    margin-bottom: 4px;        
+}
+
+.tarjeta_pedidos nav{
+    margin-top: 5%;
+}

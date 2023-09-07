@@ -1,0 +1,146 @@
+.modal_container{
+    display: flex;
+    width: 580px;
+    background-size: cover;
+    background-position: left;
+    align-items: end;                     
+}
+
+.modal_container::after{
+    content: "";
+    display: block;
+    padding-top: 70%;
+}
+
+
+.Paris{
+    background-image: url(../imagenes/Menu/Postales/Postal_Paris.jpg);
+}
+.Lyon{
+    background-image: url(../imagenes/Menu/Postales/Postal_Lyon.jpg);
+}
+.Lumpur{
+    background-image: url(../imagenes/Menu/Postales/Postal_Lumpur.jpg);
+}
+.Delhi{
+    background-image: url(../imagenes/Menu/Postales/Postal_Delhi.jpg);
+}
+.Bombay{
+    background-image: url(../imagenes/Menu/Postales/Postal_Bombay.jpg);
+}
+.Monterrey{
+    background-image: url(../imagenes/Menu/Postales/Postal_Monterrey.jpg);
+}
+.Kyoto{
+    background-image: url(../imagenes/Menu/Postales/Postal_Kyoto.jpg);
+}
+.Aires{
+    background-image: url(../imagenes/Menu/Postales/Postal_Aires.jpg);
+}
+.Ankara{
+    background-image: url(../imagenes/Menu/Postales/Postal_Ankara.jpg);
+}
+.Dhabi{
+    background-image: url(../imagenes/Menu/Postales/Postal_Dhabi.jpg);
+}
+.Austin{
+    background-image: url(../imagenes/Menu/Postales/Postal_Austin.jpg);
+}
+.Francisco{
+    background-image: url(../imagenes/Menu/Postales/Postal_Francisco.jpg);
+}
+.Bolonia{
+    background-image: url(../imagenes/Menu/Postales/Postal_Bolonia.jpg);
+}
+.Santorini{
+    background-image: url(../imagenes/Menu/Postales/Postal_Santorini.jpg);
+}
+.Oslo{
+    background-image: url(../imagenes/Menu/Postales/Postal_Oslo.jpg);
+}
+
+.modal_contenido_postal{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    position: absolute;
+    width: 580px;
+}
+
+.modal_columnas_postal{
+    display: flex;
+    align-items: end;
+}
+
+.modal_columna{
+    width: 290px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 36px 36px 36px 4px;
+    justify-content: end;
+    
+}
+
+.modal_columna p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    color: #111;  
+    font-weight: bolder;
+    margin: 0px;
+    align-self: flex-start;
+}
+
+.modal_columna ul{
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    color: #111;  
+    list-style-type: circle;
+} 
+
+.modal_columna img{
+    position: absolute;
+    width: 160px;
+    left: 160px;
+    top: 115px;
+    transform: rotate(-10deg);
+    filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.3));
+}
+
+.postal_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.postal_button{
+    font-family: HelveticaRounded;
+    color: #111;
+    font-size: 18px;
+    background-color: #F6CA44;
+    box-shadow: 2px 2px 5px #4f4f4f;
+    border: 2px solid #F6CA44;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+    width: 50%;
+    align-self: end;
+}
+
+.postal_button:hover{
+    background-color: #F6CA44;
+    box-shadow: 5px 5px 10px #4f4f4f;
+    border: 2px solid #FFE7A0;
+}
+
+.postal_button:active{
+    background-color: #F6CA44;
+    box-shadow: 1px 1px 2px #4f4f4f;
+}
+
+.modal-content{
+    width: 590px;
+}

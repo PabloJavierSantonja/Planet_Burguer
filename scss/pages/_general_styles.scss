@@ -1,0 +1,38 @@
+body{
+    background-color: $amarillo_burguer;
+}
+
+main{
+    margin-top: 162px;
+}
+
+.index{
+    background-color: $negro_burguer;
+}
+
+h2{
+    font-family: HelveticaRounded;
+    font-size: 30px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+h4{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-indent: 16px;
+}  
+
+main nav ul{
+    list-style-type: none;
+    
+}
+
+.opciones_menu{
+    height: 100px;
+}

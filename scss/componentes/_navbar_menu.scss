@@ -1,0 +1,11 @@
+.menu_navegacion{
+    margin: 32px;
+
+}
+
+.menu_navegacion ul{
+    display: flex;
+    width: 500px;
+    justify-content: start;
+    gap: 16px;            
+}

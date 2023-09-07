@@ -1,4 +1,13 @@
-@import 'componentes/header';
-@import 'componentes/footer';
+@import '../componentes/neon';
 
-@import 'componentes/neon';
+.index_hide{
+    opacity: 0;
+}
+
+.video{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;        
+}
