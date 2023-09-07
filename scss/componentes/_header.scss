@@ -1,0 +1,170 @@
+/* General */
+
+header{
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 16px 32px 16px 32px;
+    font-family: HelveticaRounded;
+    min-width: 320px;
+    z-index: 1;
+    border-bottom: 2px solid #F6CA44;
+
+
+    img{
+        height: 100px;
+    } 
+    /* Version DESKTOP */
+    div.desktop{
+        display: flex; 
+        justify-content: space-between;
+        align-items: end; 
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: center;
+            padding: 0px;
+            li{
+                a.Opcion{
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #969696;  
+                    margin: 2px 8px 2px 8px;
+                    transition: 0.2s ease-in;
+                    &:hover{
+                        border-top: 12px solid #969696;
+                        border-radius: 10px 10px 5px 5px;
+                        border-bottom: 8px solid #969696;
+                        margin: 2px 16px 2px 32px; 
+                    }
+                } 
+                a.Actual{     
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #95C11F;            
+                    border-top: 12px solid #95C11F;
+                    border-radius: 10px 10px 5px 5px;
+                    border-bottom: 8px solid #95C11F;
+                    margin: 2px 16px 2px 16px;            
+                }
+            }
+        }
+    }
+
+    /* Version MOBILE */
+    div.mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.mobile_right{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    h1{
+        font-size: 30px;
+        text-align: end;
+        color: #95C11F; 
+        margin: 0px;
+    }   
+    .drawer{            
+        position: relative;
+        justify-content: end;
+        display: flex;            
+    }
+
+
+    button.menu_hamburguesa{
+        background-color: #111;
+        border: none;
+    }
+    button.menu_hamburguesa:focus-within div.Icono_hamburguesa{
+        justify-content: space-between; 
+    }
+    nav.drawer:focus-within ul.dropdown{
+        display: block; 
+    }
+
+
+    .Icono_hamburguesa{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 8px 0px 8px 0px;
+        justify-content: center;
+        height: 50px;
+        transition: 2s;           
+    }
+        #Tapa{
+            width: 40px;
+            height: 12px;
+            background-color: white;
+            border-radius: 16px 16px 2px 2px;
+            margin-bottom: 4px;
+        }
+        #Carne{
+            width: 40px;
+            height: 8px;
+            background-color: white;
+            border-radius: 4px;
+        }
+        #Base{
+            width: 40px;
+            height: 8px;
+            background-color: white;
+            border-radius: 2px 2px 6px 6px;
+            margin-top: 4px;
+        }
+
+
+    ul.dropdown{
+        display: none;            
+        position: absolute;
+        right: -32px;
+        top: 84px;
+        padding: 0px;
+    }
+    ul.dropdown li{
+        padding: 12px 32px 12px 4px;
+        flex-direction: column;
+        border-left: 8px solid #969696;
+        border-bottom: 1px solid #969696;
+    }
+    header div.mobile nav ul li a{
+        font-size: 18px;
+        text-decoration: none;
+        color: #969696;
+        padding: 16px;
+        transition: 0.5s ease-in;
+    }       
+                    
+   
+    header div.mobile nav ul li{
+        background-color: #4f4f4f;
+    }
+ 
+    header div.mobile nav ul li.Presente a{
+        color: #95C11F;
+    }
+    header div.mobile nav ul li.Presente{
+        border-left: 8px solid #95C11F;
+        border-bottom: 1px solid #95C11F;
+    }
+
+
+
+
+    
+}
+
+
+
+
+
+
+
