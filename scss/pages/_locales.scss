@@ -5,14 +5,13 @@
     flex-direction: column;
     gap: 24px;
     margin: 32px 0px;
+    .contenedor_polaroid_2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
 }    
-
-.contenedor_polaroid_2{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-}
 
 .display_mapa{
     background-color: #BF9000;

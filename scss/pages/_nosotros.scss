@@ -14,15 +14,13 @@
         content: "";
         display: block;
         padding-top: 100%;
-    }       
-}
-
-.one{
-    @extend .square;
-    background-image: url(../imagenes/Nosotros/imagen_1.jpg);
-}
-
-.two{
-    @extend .square;
-    background-image: url(../imagenes/Nosotros/imagen_2.jpg);
+    }  
+    &.one{
+        @extend .square;
+        background-image: url(../imagenes/Nosotros/imagen_1.jpg);
+    }
+    &.two{
+        @extend .square;
+        background-image: url(../imagenes/Nosotros/imagen_2.jpg);
+    }     
 }

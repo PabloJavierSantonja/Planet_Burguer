@@ -1,170 +1,129 @@
-/* General */
+@import '../base/mixins';
 
 header{
-    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    min-height: 136px;
+
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
-    padding: 16px 32px 16px 32px;
-    font-family: HelveticaRounded;
-    min-width: 320px;
-    z-index: 1;
-    border-bottom: 2px solid #F6CA44;
+    z-index: 2;
 
-    img{
-        height: 100px;
-    } 
-    /* Version DESKTOP */
-    div.desktop{
-        display: flex; 
-        justify-content: space-between;
-        align-items: end; 
+    background-color: $negro_burguer;
+    padding: 16px 32px 20px 32px;
+    border-bottom: 2px solid $amarillo_burguer;
 
-        nav ul{
+    .Marca{
+        img{
+            height: 100px;
+        }
+        &.index{
+            opacity: 0%;
+            cursor: default ;
+        }
+    }
+
+    nav.desktop{
+        ul{
             display: flex;
             flex-direction: row;
-            list-style-type: none;
-            align-items: center;
+            margin: 0px;
             padding: 0px;
+            list-style-type: none;
             li{
-                a.Opcion{
-                    font-size: 18px;
+                a.Actual{
                     text-decoration: none;
+                    font-family: HelveticaRounded;
+                    font-size: 18px;
+                    margin: $navbar_selected;
+
+                    color: $verde_burguer;
+                    border-top: 12px solid $verde_burguer;
+                    border-radius: 10px 10px 5px 5px;
+                    border-bottom: 8px solid $verde_burguer;
+                }
+                a.Opcion{
+                    @extend a,.Actual;
+                    margin: $navbar_nonselected;
                     color: $gris_burguer_light;  
-                    margin: 2px 8px 2px 8px;
+                    border-top: none;
+                    border-bottom: none;
                     transition: 0.2s ease-in;
                     &:hover{
                         border-top: 12px solid $gris_burguer_light;
                         border-radius: 10px 10px 5px 5px;
                         border-bottom: 8px solid $gris_burguer_light;
-                        margin: 2px 16px 2px 32px; 
-                    }
-                } 
-                a.Actual{     
-                    font-size: 18px;
-                    text-decoration: none;
-                    color: $verde_burguer;            
-                    border-top: 12px solid $verde_burguer;
-                    border-radius: 10px 10px 5px 5px;
-                    border-bottom: 8px solid $verde_burguer;
-                    margin: 2px 16px 2px 16px;            
+                        margin: $navbar_selected; 
+                    }   
                 }
             }
         }
     }
+    nav.mobile{
 
-    /* Version MOBILE */
-    div.mobile{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    div.mobile_right{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    h1{
-        font-size: 30px;
-        text-align: end;
-        color: #95C11F; 
-        margin: 0px;
-    }   
-    .drawer{            
-        position: relative;
-        justify-content: end;
-        display: flex;            
-    }
-
-
-    button.menu_hamburguesa{
-        background-color: #111;
-        border: none;
-    }
-    button.menu_hamburguesa:focus-within div.Icono_hamburguesa{
-        justify-content: space-between; 
-    }
-    nav.drawer:focus-within ul.dropdown{
-        display: block; 
-    }
-
-
-    .Icono_hamburguesa{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        margin: 8px 0px 8px 0px;
-        justify-content: center;
-        height: 50px;
-        transition: 2s;           
-    }
-        #Tapa{
-            width: 40px;
-            height: 12px;
-            background-color: white;
-            border-radius: 16px 16px 2px 2px;
-            margin-bottom: 4px;
-        }
-        #Carne{
-            width: 40px;
-            height: 8px;
-            background-color: white;
-            border-radius: 4px;
-        }
-        #Base{
-            width: 40px;
-            height: 8px;
-            background-color: white;
-            border-radius: 2px 2px 6px 6px;
-            margin-top: 4px;
+        button.menu_hamburguesa{
+            background-color: #111;
+            border: none;
+            transition: 2s; 
         }
 
+        .Icono_hamburguesa{
+            display: flex;
+            flex-direction: column;
+            margin: 8px 0px 8px 0px;
+            justify-content: flex-end;
+            height: 50px;   
+            #Tapa{
+                @include partes_hamburguesa(40px, 12px, white, 16px 16px 2px 2px);
+                margin-bottom: 4px;
+            }
+            #Carne{
+                @include partes_hamburguesa(40px, 8px, white, 4px);
+            }
+            #Base{
+                @include partes_hamburguesa(40px, 8px, white, 2px 2px 6px 6px);
+                margin-top: 4px;
+            }          
+        }
 
-    ul.dropdown{
-        display: none;            
-        position: absolute;
-        right: -32px;
-        top: 84px;
-        padding: 0px;
-    }
-    ul.dropdown li{
-        padding: 12px 32px 12px 4px;
-        flex-direction: column;
-        border-left: 8px solid $gris_burguer_light;
-        border-bottom: 1px solid $gris_burguer_light;
-        background-color: $gris_burguer;
-    }
-    header div.mobile nav ul li a{
-        font-size: 18px;
-        text-decoration: none;
-        color: #969696;
-        padding: 16px;
-        transition: 0.5s ease-in;
-    }       
-                    
-   
-    header div.mobile nav ul li{
-        background-color: #4f4f4f;
-    }
- 
-    header div.mobile nav ul li.Presente a{
-        color: #95C11F;
-    }
-    header div.mobile nav ul li.Presente{
-        border-left: 8px solid #95C11F;
-        border-bottom: 1px solid #95C11F;
+        ul.dropdown{
+            display: none;            
+            position: absolute;
+            right: 0px;
+            top: 136px;
+            padding: 0px;
+            background-color: $gris_burguer;
+            list-style-type: none;
+            li{
+                padding: 12px 32px 12px 8px;
+                border-left: 8px solid $gris_burguer_light;
+                border-bottom: 1px solid $gris_burguer_light;
+                a{
+                    font-family: HelveticaRounded;
+                    color: $gris_burguer_light;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+                &.Drop_down_Actual{
+                    border-left: 8px solid $verde_burguer;
+                    border-bottom: 1px solid $verde_burguer;
+                    a{
+                        color: $verde_burguer;
+                    }
+                }
+            }    
+        }
     }
 
-
-
-
-    
 }
 
-
-
-
-
+button.menu_hamburguesa:focus-within div.Icono_hamburguesa{
+    justify-content: space-between; 
+}
+nav.drawer:focus-within ul.dropdown{
+    display: block; 
+}
 
 

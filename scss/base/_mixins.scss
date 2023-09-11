@@ -1,0 +1,6 @@
+@mixin partes_hamburguesa ($width, $height, $background-color, $border-radius){
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    border-radius: $border-radius;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planet Burguer / Menú</title>
+    <title>Planet Burguer / Menú / Hamburguesas</title>
 
     <!-- Vínculo a Bootstraps -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -15,73 +15,58 @@
 
 <body>
 
-    <header>
-
+    <header>        
+        <a class="Marca" href="../index.html">
+            <img src="../imagenes/SVG/PlanetBurguer_imagotipo_color.svg" alt="Marca">
+        </a>
         <!-- Elementos Desktop -->
-        <div class="desktop">
-            <a href="../index.html" class="desktop">
-                <img class="desktop" src="../imagenes/SVG/PlanetBurguer_imagotipo_color.svg" alt="Imagotipo">
-            </a>          
-            <nav class="desktop">
-                <ul>
-                    <li><a class="Opcion" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="Actual" href="menu.html">Menú</a></li>
-                    <li><a class="Opcion" href="locales.html">Locales</a></li>
-                    <li><a class="Opcion" href="eventos.html">Eventos</a></li>
-                    <li><a class="Opcion" href="pedidos.html">Pedidos</a></li>
-                </ul>
-            </nav>
-        </div>        
-
+        <nav class="desktop">
+            <ul class="desktop">
+                <li><a class="Opcion" href="nosotros.html">Nosotros</a></li>
+                <li><a class="Actual" href="menu.html">Menú</a></li>
+                <li><a class="Opcion" href="locales.html">Locales</a></li>
+                <li><a class="Opcion" href="eventos.html">Eventos</a></li>
+                <li><a class="Opcion" href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
         <!-- Elementos Mobile -->
-        <div class="mobile">
-            <a class="mobile" href="../index.html">
-                <img class="mobile" src="../imagenes/SVG/PlanetBurguer_isotipo_color.svg" alt="Isotipo">    
-            </a>            
-            <div class="mobile mobile_right">
-                <h1 class="mobile">Planet Burguer</h1>
-                <nav class="mobile drawer">
-                    <button class="mobile menu_hamburguesa">
-                        <div class="Icono_hamburguesa">
-                            <div id="Tapa"></div>
-                            <div id="Carne"></div>
-                            <div id="Base"></div>
-                        </div>  
-                    </button>
-                    <ul class="dropdown">
-                        <li><a href=../index.html>Home</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li class="Presente"><a href="menu.html">Menú</a></li>
-                        <li><a href="locales.html">Locales</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="pedidos.html">Pedidos</a></li>
-                    </ul> 
-                </nav>                                  
-                
-            </div>            
-        </div>  
-          
+        <nav class="mobile drawer">
+            <button class="mobile menu_hamburguesa">
+                <div class="Icono_hamburguesa">
+                    <div id="Tapa"></div>
+                    <div id="Carne"></div>
+                    <div id="Base"></div>
+                </div>  
+            </button>
+            <ul class="dropdown">
+                <li><a href=../index.html>Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li class="Drop_down_Actual"><a href="menu.html">Menú</a></li>
+                <li><a href="locales.html">Locales</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul> 
+        </nav> 
     </header>
 
     <main class="Menu">
         <section class="container">
+           
+            <!-- Navegación entre secciones -->
+            <nav class="menu_navegacion">                   
+                <ul>                        
+                    <li><a class="boton_menu Seleccionado" href="menu.html"><img src="../imagenes/SVG/Hamburguesa.svg" alt="Hamburguesas"></a></li>
+                    <li><a class="boton_menu" href="menu_guarniciones.html"><img src="../imagenes/SVG/Guarnición.svg" alt="Hamburguesas"></a></li>
+                    <li><a class="boton_menu" href="menu_postres.html"><img src="../imagenes/SVG/Postre.svg" alt="Hamburguesas"></a></li>
+                    <li><a class="boton_menu" href="menu_bebidas.html"><img src="../imagenes/SVG/Bebida.svg" alt="Hamburguesas"></a></li>
+                </ul>
+            </nav>
+            
             <div class="row">
-                <!-- Navegación entre secciones -->
-                <nav class="menu_navegacion">                   
-                    <ul>                        
-                        <li><a href=""><img class="opciones_menu" src="../imagenes/menu_bar/Tipo=Hamburguesa_Estado=Activo.png" alt="Hamburguesa_Activo"></a></li>
-                        <li><a href=""><img class="opciones_menu" src="../imagenes/menu_bar/Tipo=Guarnicion_Estado=Inactivo.png" alt="Guarnicion_Inactivo"></a></li>
-                        <li><a href=""><img class="opciones_menu" src="../imagenes/menu_bar/Tipo=Postre_Estado=Inactivo.png" alt="Postre_Inactivo"></a></li>
-                        <li><a href=""><img class="opciones_menu" src="../imagenes/menu_bar/Tipo=Bebida_Estado=Inactivo.png" alt="Bebida_Inactivo"></a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <!-- Tarjetas hamburguesas -->
+                <div class="col">                    
                     <nav class="container_hamburguesas">
                         <ul>
+                            <!-- Tarjetas hamburguesas -->
                             <li class="card_hamburguesa">
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#Modal_Paris">
                                     <div class="foto_container">
@@ -216,7 +201,7 @@
                                     </div>
                                     <p>Oslo</p>
                                 </button>
-                            </li>                                                
+                            </li>                          
                         </ul>
                     </nav>
                 </div>
@@ -228,10 +213,10 @@
 
     <div class="modal fade" id="Modal_Paris" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Paris">                
                     <div class="modal_contenido_postal">            
-                        <div class="modal_columna"></div>
+                        <div class="modal_columna desktop"></div>
                         <div class="modal_columna">
                             <div class="postal_texto">
                                 <p class="nombre">París</p>
@@ -249,12 +234,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">París</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Paris.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
 
     <div class="modal fade" id="Modal_Lyon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Lyon">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -275,12 +276,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Lyon</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Lyon.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Lumpur" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Lumpur">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -301,12 +318,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Kuala Lumpur</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Lumpur.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Delhi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Delhi">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -327,12 +360,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Delhi</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Delhi.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Bombay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Bombay">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -353,12 +402,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Bombay</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Bombay.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
 
     <div class="modal fade" id="Modal_Monterrey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Monterrey">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -379,12 +444,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Monterrey</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Monterrey.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
 
     <div class="modal fade" id="Modal_Kyoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Kyoto">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -405,12 +486,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Kyoto</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Kyoto.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Aires" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Aires">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -431,12 +528,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Buenos Aires</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Aires.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Ankara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Ankara">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -457,12 +570,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Ankara</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Ankara.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Dhabi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Dhabi">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -483,12 +612,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Abu Dhabi</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Dhabi.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
     
     <div class="modal fade" id="Modal_Austin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Austin">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -509,12 +654,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Austin</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Austin.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
 
     <div class="modal fade" id="Modal_Francisco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Francisco">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -535,12 +696,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">San Francisco</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Francisco.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Bolonia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Bolonia">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -561,12 +738,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Bolonia</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Bolonia.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Santorini" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Santorini">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -587,12 +780,28 @@
                     </div>
                 </div>
             </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Santorini</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Santorini.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
+            </div>
         </div>
     </div>
      
     <div class="modal fade" id="Modal_Oslo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content"> 
+            <div class="modal-content desktop"> 
                 <div class="modal_container Oslo">                
                     <div class="modal_contenido_postal">            
                         <div class="modal_columna"></div>
@@ -612,6 +821,22 @@
                         </div>                             
                     </div>
                 </div>
+            </div>
+            <div class="modal-content mobile"> 
+                <div class="modal_columna">
+                    <div class="postal_texto">
+                        <p class="nombre">Oslo</p>
+                        <ul class="Ingredientes">
+                            <li>Medallón de carne vacuna</li>
+                            <li>Queso Brie</li>
+                            <li>Champignones</li>
+                            <li>Rúcula</li>
+                            <li>Mostaza de Dijon</li>
+                        </ul>
+                    </div>
+                    <img class="postal_hamburguesa" src="../imagenes/Menu/Hamburguesas/Hamburguesa_Oslo.png" alt="">
+                    <a class="postal_button" href="../html/pedidos.html">¡Quiero!</a>
+                </div>                             
             </div>
         </div>
     </div>
