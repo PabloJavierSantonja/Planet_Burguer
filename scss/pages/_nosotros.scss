@@ -1,26 +1,26 @@
 .grid_nosotros{
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 20px;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
     margin-bottom: 20px;
     margin-top: 32px;
+    .square{    
+        width: 100%;
+        background-size: cover;
+        background-position: center; 
+        &::after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }  
+        &.one{
+            @extend .square;
+            background-image: url(../imagenes/Nosotros/imagen_1.jpg);
+        }
+        &.two{
+            @extend .square;
+            background-image: url(../imagenes/Nosotros/imagen_2.jpg);
+        }     
+    }
 }
 
-.square{    
-    width: 100%;
-    background-size: cover;
-    background-position: center; 
-    &::after{
-        content: "";
-        display: block;
-        padding-top: 100%;
-    }  
-    &.one{
-        @extend .square;
-        background-image: url(../imagenes/Nosotros/imagen_1.jpg);
-    }
-    &.two{
-        @extend .square;
-        background-image: url(../imagenes/Nosotros/imagen_2.jpg);
-    }     
-}

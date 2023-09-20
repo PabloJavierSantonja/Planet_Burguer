@@ -303,26 +303,25 @@ main nav ul {
 
 .grid_nosotros {
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 20px;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
   margin-bottom: 20px;
   margin-top: 32px;
 }
-
-.square, .square.two, .square.one {
+.grid_nosotros .square, .grid_nosotros .square.two, .grid_nosotros .square.one {
   width: 100%;
   background-size: cover;
   background-position: center;
 }
-.square::after, .square.two::after, .square.one::after {
+.grid_nosotros .square::after, .grid_nosotros .square.two::after, .grid_nosotros .square.one::after {
   content: "";
   display: block;
   padding-top: 100%;
 }
-.square.one {
+.grid_nosotros .square.one {
   background-image: url(../imagenes/Nosotros/imagen_1.jpg);
 }
-.square.two {
+.grid_nosotros .square.two {
   background-image: url(../imagenes/Nosotros/imagen_2.jpg);
 }
 
